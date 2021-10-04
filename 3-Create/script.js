@@ -44,14 +44,15 @@ const addSection = () => {
     const sectionEl = document.createElement("section");
 
     const paragraph = document.createElement("p");
-    if (member === "Michael Tesfay" || member === "JC Molhant") {
+    if (member === "Michael Tesfay") {
       console.log(
-        "we removed those two bad boys from the list!\nMichael Tesfay\nJC Molhant"
+        "My name has been skipped out from the list using continue!\nMichael Tesfay"
       );
       continue; //skipping my name
     }
     paragraph.textContent = member; //passing the student full name as a textContent of each paragraph.
     sectionEl.appendChild(paragraph);
+    article.appendChild(sectionEl);
 
     //**--here comes the quantem physics sort of concept ? ); =>JC--**//
     //but it is all about checking the balance of textcolor and background brightness.
@@ -79,7 +80,7 @@ const arrayShuffle = (arr) => {
   }
   return arr;
 };
-arrayShuffle(lesJepsenes);
+// arrayShuffle(lesJepsenes);
 
 for (i = 0; i < lesJepsenes.length; i++) {
   addSection(lesJepsenes[i]);
