@@ -80,8 +80,7 @@ const arrayShuffle = (arr) => {
   }
   return arr;
 };
-// arrayShuffle(lesJepsenes);
+arrayShuffle(lesJepsenes);
+addSection();
 
-for (i = 0; i < lesJepsenes.length; i++) {
-  addSection(lesJepsenes[i]);
-}
+module.exports =randomizer();
